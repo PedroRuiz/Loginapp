@@ -27,7 +27,7 @@ export class NavbarComponent implements OnInit {
       } else {
         this.isLogin = false;
       }
-    })
+    });
   }
 
   onClickLogout() {

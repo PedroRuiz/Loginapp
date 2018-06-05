@@ -24,7 +24,8 @@ import { AuthService } from './servicios/auth.service';
 // E N V I R O N M E N T   F I R E B A S E
 import { environment } from '../environments/environment';
 
-
+// G U A R D
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { environment } from '../environments/environment';
 
   ],
   providers: [
-    AuthService
+    AuthService,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
